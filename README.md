@@ -6,4 +6,4 @@ Rotate using the arrow keys and exit by pressing 'q'.
 
 ![unable to load image](/res/img.png)
 
-Confirmed to work on Mac OSX. On linux please change the Makefile to link the OpenGL and GLUT libraries.
+Confirmed to work on Mac OSX and Linux. On linux please change the Makefile to link the OpenGL and GLUT libraries if they are in non standard places.
