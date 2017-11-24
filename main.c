@@ -10,12 +10,12 @@
 #include <stdlib.h>
 #include "noise.h"
 
-const static int n    = 100;
-const static int pts  = n*n;
-const static int tris = pts - n;
+const int n    = 100;
+const int pts  = n*n;
+const int tris = pts - n;
 
-float map[pts];
-float indices[9*tris];
+static float map[pts];
+static float indices[9*tris];
 
 float rx = 90.0f;
 float ry = 0.0f;
