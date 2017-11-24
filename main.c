@@ -18,8 +18,8 @@ static const int tris = n*n - n;
 static float map[n*n];
 static float indices[9*(n*n - n)];
 
-float rx = 90.0f;
-float ry = 0.0f;
+static float rx = 90.0f;
+static float ry = 0.0f;
 
 void special(int key, int x, int y) {
 
