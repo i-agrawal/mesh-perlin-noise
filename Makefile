@@ -5,7 +5,7 @@ CFLAGS := -O2 -Wno-deprecated
 
 ifneq ($(OS),Windows_NT)
 	UNAME := $(shell uname -s)
-	ifeq ($(UNAME),Darwin)
+	ifeq ($(UNAME),Linux)
 		LDLAGS := -lglut -lGLU -lGL
 	endif
 	ifeq ($(UNAME),Darwin)
