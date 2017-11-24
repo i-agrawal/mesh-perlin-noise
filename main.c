@@ -12,11 +12,11 @@
 
 #define n 100
 
-const int pts  = n*n;
-const int tris = n*n - n;
+static const int pts  = n*n;
+static const int tris = n*n - n;
 
-static float map[pts];
-static float indices[9*tris];
+static float map[n*n];
+static float indices[9*(n*n - n)];
 
 float rx = 90.0f;
 float ry = 0.0f;
