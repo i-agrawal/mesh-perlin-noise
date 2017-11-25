@@ -6,10 +6,10 @@ CFLAGS := -O2 -Wno-deprecated
 ifneq ($(OS),Windows_NT)
 	UNAME := $(shell uname -s)
 	ifeq ($(UNAME),Linux)
-		LDLAGS := -lglut -lGLU -lGL
+		LIBS := -lglut -lGLU -lGL
 	endif
 	ifeq ($(UNAME),Darwin)
-		LDLAGS := -framework OpenGL -framework GLUT
+		LIBS := -framework OpenGL -framework GLUT
 	endif
 endif
 
@@ -17,7 +17,7 @@ endif
 	$(CC) -c -o $@ $< $(CFLAGS)
 
 $(output) : $(object)
-	$(CC) -o $@ $^ $(LDLAGS) $(CFLAGS)
+	$(CC) -o $@ $^ $(LIBS) $(CFLAGS)
 
 .PHONY: clean
 
